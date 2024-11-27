@@ -1,0 +1,16 @@
+.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .not-completed {
+    color: black;
+    text-decoration: none;
+  }
+
+  #errorMessage {
+    color: firebrick;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+    

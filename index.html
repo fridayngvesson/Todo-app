@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Använder mig av tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+
+  <!-- Huvudsektionen för todo-listan -->
+<div class="container mx-auto bg-pink-300">
+  <h1 class="text-center text-rose-950 text-4xl pt-6">Todo List</h1>
+
+  <form class="bg-pink-300 my-4 text-center" id="todoForm">
+    <input class="cursor-text text-xl border rounded mb-2.5" type="text" id="todoInput" placeholder="New todo">
+    <button class="cursor-pointer text-xl text-rose-950 bg-white/75 border rounded px-4 " type="submit">Add</button>
+    <p id="errorMessage"></p> <!-- Visar felmeddelande -->
+  </form>
+
+  <ul class="text-center" id="todoList"></ul>
+</div>
+
+<!-- Modal för varning -->
+<div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+  <div class="bg-white rounded-lg p-6 text-center">
+    <p id="modalMessage" class="text-red-500 text-lg mb-4"></p>
+    <button id="closeModal" class="bg-blue-500 text-white px-4 py-2 rounded">
+      Close
+    </button>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
